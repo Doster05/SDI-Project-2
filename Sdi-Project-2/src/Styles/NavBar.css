@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav {
+    background-color: #E2CAAD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #5C4033;
+}
+
+nav .HomeRoute {
+    cursor: pointer;
+    color: #5C4033;
+} 
