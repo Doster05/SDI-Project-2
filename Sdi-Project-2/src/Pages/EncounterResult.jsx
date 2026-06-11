@@ -16,31 +16,35 @@ function EncounterResult() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    let cancelled = false;
-    setLoading(true)
-    const amount = parseInt(encounterAmount)
-    fetch(`https://api.open5e.com/v2/creatures/?challenge_rating=${encounterCR}&limit=1`)
-      .then(res => res.json())
-      .then(data => {
-        const total = data.count;
-        const randomOffset = Math.floor(Math.random() * (total - amount));
-        return fetch(`https://api.open5e.com/v2/creatures/?challenge_rating=${encounterCR}&limit=${amount}&offset=${randomOffset}`);
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (cancelled) return;
-        setGolems(data.results);
-        const newImages = {};
-        data.results.forEach((golem, i) => {
-          const formattedName = golem.name.toLowerCase().replace(/\s+/g, '-');
-          newImages[i] = `https://www.dnd5eapi.co/api/images/monsters/${formattedName}.png`;
-        });
-        setGolemImages(newImages);
-        setLoading(false)
-      })
-
-    return () => { cancelled = true }
-  }, [encounterCR, encounterAmount])
+  let cancelled = false;
+  setLoading(true)
+  const amount = parseInt(encounterAmount)
+  fetch(`https://api.open5e.com/v2/creatures/?challenge_rating=${encounterCR}&limit=1`)
+    .then(res => res.json())
+    .then(data => {
+      if (cancelled) throw new Error('cancelled');
+      const total = data.count;
+      const randomOffset = Math.floor(Math.random() * (total - 100));
+      return fetch(`https://api.open5e.com/v2/creatures/?challenge_rating=${encounterCR}&limit=100&offset=${randomOffset}`);
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (cancelled) throw new Error('cancelled');
+      const shuffled = data.results.sort(() => Math.random() - 0.5).slice(0, amount);
+      setGolems(shuffled);
+      const newImages = {};
+      shuffled.forEach((golem, i) => {
+        const formattedName = golem.name.toLowerCase().replace(/\s+/g, '-');
+        newImages[i] = `https://www.dnd5eapi.co/api/images/monsters/${formattedName}.png`;
+      });
+      setGolemImages(newImages);
+      setLoading(false)
+    })
+    .catch(err => {
+      if (err.message !== 'cancelled') console.log('fetch error:', err)
+    })
+  return () => { cancelled = true }
+}, [encounterCR, encounterAmount])
 
   if (loading) {
     return (

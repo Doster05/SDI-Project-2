@@ -1,0 +1,52 @@
+img {
+    border-radius: 10px;
+}
+
+.ItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ItemCard {
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 260px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ItemName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.ItemCard ul {
+    list-style: none;
+    display: flex;
+    justify-content: sp;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.ItemCard:hover {
+    background-color: #bf9e3b44;
+}
+
+.ItemImage {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
