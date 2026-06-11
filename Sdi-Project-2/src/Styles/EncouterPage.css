@@ -12,7 +12,22 @@
     margin: 15px;
 }
 
-.EncounterMainContainer {
+.EncounterMainContainer ul{
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    gap: 8px;
+    justify-content: space-evenly;
+}
+
+.SubmitButtonContainer {
     display: flex;
     justify-content: center;
+}
+
+.SubmitButtonContainer button {
+    width: 380px;
+    max-width: 380px;
+    height: 25px;
 }

@@ -17,9 +17,11 @@ function ItemPage() {
             </div>
             <div className='ItemMainContainer'>
                 <ul>
-                    <li>Pilfer Type <DropDownSelectionItem className='DropDownItem' /> </li>
-                    <li>Pilfer Amount<DropDownAmount className='DropDownAmount' /></li>
+                    <li>Pilfer Type: <DropDownSelectionItem className='DropDownItem' /> </li>
+                    <li>Pilfer Amount: <DropDownAmount className='DropDownAmount' /></li>
                 </ul>
+                </div>
+            <div className='SubmitButtonContainer'>
                 <button className='SelectionButton' onClick={() => navigate(`/ItemResult/${'Magic Item'}/${2}`)}>Browse Pilfered Goods</button>
             </div>
         </>

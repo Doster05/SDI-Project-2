@@ -23,6 +23,8 @@ function EncounterPage() {
                     <li>Golem Amount: <DropDownAmount value={amount} onChange={setAmount} /></li>
                     <li>Golem CR: <DropDownCRSelection value={cr} onChange={setCR} /></li>
                 </ul>
+                </div>
+            <div className='SubmitButtonContainer'>
                 <button className='SelectionButton' onClick={() => navigate(`/EncounterResult/${cr}/${amount}`)}>Browse Golems</button>
             </div>
         </>
