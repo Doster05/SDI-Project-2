@@ -4,6 +4,7 @@ function ErrorPage() {
     
     return(
         <>
+            <title>!Error</title>
             <div className='ErrorContainer'>
                 <h2 className='ErrorMessage'>An Error Has Occured</h2>
                 <div className='ErrorTextContainer'>

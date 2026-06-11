@@ -1,22 +1,28 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     margin: 0;
 }
-
 nav {
-    background-color: #E2CAAD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #D9C486;
     position: sticky;
     top: 0;
-    border-bottom: 2px solid #5C4033;
+    z-index: 100;
+    border-bottom: 2px solid #735E24;
+}   
+
+.NavContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-nav .HomeRoute {
+.NavContainer h3 {
+    margin: 10px;
+}
+
+nav h3 {
     cursor: pointer;
     color: #5C4033;
-} 
+}

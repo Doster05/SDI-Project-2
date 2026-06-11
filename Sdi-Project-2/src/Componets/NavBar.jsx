@@ -7,7 +7,9 @@ function NavBar() {
     return(
         <nav>
             <div className='NavContainer'>
-                <h2 className='HomeRoute' onClick={() => navigate('/')}>HomePage</h2>
+                <h3 className='HomeRoute' onClick={() => navigate('/')}>DnD Builder</h3>
+                <h3 className='EncounterRoute' onClick={() => navigate('/EncounterSearch')}>Encounter Builder</h3>
+                <h3 className='EquipmentRoute' onClick={() => navigate('/ItemSearch')}>Equipment Finder</h3>
             </div>
         </nav>
     )

@@ -1,0 +1,18 @@
+.ShopNameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.ShopDescriptionContainer{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #735E24;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.EncounterMainContainer {
+    display: flex;
+    justify-content: center;
+}
