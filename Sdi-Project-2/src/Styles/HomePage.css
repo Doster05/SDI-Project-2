@@ -40,10 +40,6 @@
   gap: 12px;
 }
 
-.HomePageCard:hover {
-  background-color: #bf9e3b44;
-}
-
 .HomePageCardTitle {
   color: #5C4033;
   margin: 0;

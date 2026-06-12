@@ -1,0 +1,83 @@
+.SelectedItemHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+}
+
+.ItemImage {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.SelectedItemHeaderText {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.ItemName {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ItemRarity {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #bf9e3b44;
+    border: 1px solid #bf9e3b;
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin: 0;
+}
+
+.SelectedItemInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 16px 16px;
+}
+
+.ItemTag {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.SelectedItemDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 680px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 8px auto; 
+    padding: 0 16px 24px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.SelectedItemDesc table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.SelectedItemDesc th,
+.SelectedItemDesc td {
+    border: 1px solid black;
+    padding: 6px 12px;
+    text-align: left;
+}
+
+.SelectedItemDesc th {
+    background-color: #bf9e3b44;
+    font-weight: 600;
+}

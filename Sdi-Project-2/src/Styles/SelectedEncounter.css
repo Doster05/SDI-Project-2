@@ -1,0 +1,215 @@
+.EncounterHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+}
+
+.EncounterHeaderContainer img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.EncounterHeaderText {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.EncounterName {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.EncounterCR {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #bf9e3b44;
+    border: 1px solid #bf9e3b;
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin: 0;
+}
+
+.EncounterInfoContainer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.EncounterSpeedUl,
+.EncounterStatsUl {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.EncounterSpeed,
+.EncounterStats {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+.EncounterDarkvision {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ── Action Cards ── */
+.EncounterActionsContainer {
+    padding: 16px;
+}
+
+.EncounterActionsContainer h2 {
+    margin-bottom: 12px;
+}
+
+.EncounterActionsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ActionCard {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 12px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ActionCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.ActionCardHeader h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.ActionTypeBadge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2px 7px;
+    white-space: nowrap;
+}
+
+.ActionRecharge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #bf9e3b;
+}
+
+.ActionDesc {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.ActionAttackInfo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-top: 1px solid #ccc;
+    padding-top: 6px;
+}
+
+.ActionAttackInfo span {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+.EncounterInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.EncounterInfoContainer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.EncounterSpeedUl,
+.EncounterStatsUl {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.EncounterSpeed,
+.EncounterStats {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+.EncounterDarkvision {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.EncounterActionsContainer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.EncounterActionsContainer h2 {
+    margin: 0;
+}
+
+.EncounterActionsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.EncounterHpAc {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.EncounterHpAc p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 14px;
+}

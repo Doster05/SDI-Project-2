@@ -45,9 +45,9 @@ function ItemResult() {
     .then(res => res.json())
     .then(data => {
       if (cancelled) throw new Error('cancelled');
-      const shuffled = data.results.sort(() => Math.random() - 0.5).slice(0, amount);
+      const shuffled = (data.results ?? []).sort(() => Math.random() - 0.5).slice(0, amount);
       setPilferedGoods(shuffled);
-      setLoading(false)
+      setLoading(false);
     })
     .catch(err => {
       if (err.message !== 'cancelled') console.log('fetch error:', err)
