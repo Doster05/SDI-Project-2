@@ -60,7 +60,7 @@ function ItemResult() {
   return (
     <div className='ItemContainer'>
       {pilferedGoods.map((item, i) => (
-        <div className='ItemCard' key={i} onClick={() => navigate(`/SelectedItem/${item.key}`)}>
+        <div className='ItemCard' key={i} onClick={() => navigate(`/SelectedItem/${item.key}/${itemType}`)}>
           <img
             className='ItemImage'
             src={categoryImages[endpoint]}

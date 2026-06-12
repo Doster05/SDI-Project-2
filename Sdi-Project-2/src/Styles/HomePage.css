@@ -1,0 +1,87 @@
+.HomePageHero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 2px solid #735E24;
+  background-color: #c9b06e;
+}
+
+.HomePageTitle {
+  font-size: 3rem;
+  color: #5C4033;
+  margin: 0 0 0.5rem;
+}
+
+.HomePageSubtitle {
+  font-size: 1rem;
+  color: #5C4033;
+  margin: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.HomePageMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.HomePageCard {
+  border: 1px solid #735E24;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.HomePageCard:hover {
+  background-color: #bf9e3b44;
+}
+
+.HomePageCardTitle {
+  color: #5C4033;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.HomePageDivider {
+  height: 1px;
+  background-color: #735E24;
+  width: 100%;
+}
+
+.HomePageCardDesc {
+  color: #5C4033;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.HomePageCardHint {
+  font-size: 0.8rem;
+  color: #735E24;
+  margin: 0;
+  font-style: italic;
+}
+
+.HomePageCardButton {
+  margin-top: auto;
+  padding: 8px 16px;
+  background-color: #735E24;
+  color: #D9C486;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.HomePageCardButton:hover {
+  background-color: #5C4033;
+}

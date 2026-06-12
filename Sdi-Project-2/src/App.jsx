@@ -28,7 +28,7 @@ function App() {
           <Route path='/EncounterResult/:encounterCR/:encounterAmount' element={<EncounterResult />} />
     
           <Route path='/SelectedEncounter/:encounterID' element={<SelectedEncounter />}/>
-          <Route path='/SelectedItem/:itemID' element={<SelectedItem />}/>
+          <Route path='/SelectedItem/:itemID/:itemType' element={<SelectedItem />}/>
     
           <Route path='*' element={<ErrorPage />}/>
         
